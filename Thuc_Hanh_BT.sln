@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thuc_Hanh_BT", "Thuc_Hanh_BT\Thuc_Hanh_BT.csproj", "{29FD5935-68CD-4F75-AB40-F3A62602C6B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Thuc_Hanh_BT", "Thuc_Hanh_BT\Thuc_Hanh_BT.csproj", "{29FD5935-68CD-4F75-AB40-F3A62602C6B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "thucHanhChuong2", "thucHanhChuong2\thucHanhChuong2.csproj", "{6B6389BE-FB7D-4E2C-A457-13B2D6A2462A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{29FD5935-68CD-4F75-AB40-F3A62602C6B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29FD5935-68CD-4F75-AB40-F3A62602C6B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29FD5935-68CD-4F75-AB40-F3A62602C6B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B6389BE-FB7D-4E2C-A457-13B2D6A2462A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B6389BE-FB7D-4E2C-A457-13B2D6A2462A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B6389BE-FB7D-4E2C-A457-13B2D6A2462A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B6389BE-FB7D-4E2C-A457-13B2D6A2462A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
