@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace THChuong4
 {
-    public partial class frmMain : Form
+    public partial class Form1 : Form
     {
-        public frmMain()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -65,7 +65,9 @@ namespace THChuong4
         {
             Control ctr = (Control)sender;
             if (ctr.Text.Trim().Length == 0)
+            {
                 this.errorProvider1.SetError(txtYourName, "You must enter Your name");
+            }
             else
                 this.errorProvider1.Clear();
         }

@@ -71,6 +71,7 @@
             this.txtNum1.Name = "txtNum1";
             this.txtNum1.Size = new System.Drawing.Size(273, 26);
             this.txtNum1.TabIndex = 1;
+            this.txtNum1.TextChanged += new System.EventHandler(this.txtNum1_TextChanged_1);
             this.txtNum1.Validating += new System.ComponentModel.CancelEventHandler(this.txtNum1_Validating);
             // 
             // txtNum2
@@ -80,6 +81,7 @@
             this.txtNum2.Name = "txtNum2";
             this.txtNum2.Size = new System.Drawing.Size(273, 26);
             this.txtNum2.TabIndex = 2;
+            this.txtNum2.TextChanged += new System.EventHandler(this.txtNum2_TextChanged_1);
             this.txtNum2.Validating += new System.ComponentModel.CancelEventHandler(this.txtNum2_Validating);
             // 
             // label3

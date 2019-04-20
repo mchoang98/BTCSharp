@@ -16,6 +16,7 @@ namespace THChuong4
         public Form3()
         {
             InitializeComponent();
+            
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
@@ -99,6 +100,28 @@ namespace THChuong4
             float a = float.Parse(txtNum1.Text);
             float b = float.Parse(txtNum2.Text);
             txtKetqua.Text = "" + ((float)a / b);
+        }
+
+        private void txtNum1_TextChanged_1(object sender, EventArgs e)
+        {
+            Control ctr = (Control)sender;
+            if (ctr.Text.Trim().Length > 0 && !char.IsDigit(ctr.Text,
+           ctr.Text.Length - 1))
+                this.errorProvider1.SetError(txtNum1, "This is not invalid               number");
+ else
+
+                this.errorProvider1.Clear();
+        }
+
+        private void txtNum2_TextChanged_1(object sender, EventArgs e)
+        {
+            Control ctr = (Control)sender;
+            if (ctr.Text.Trim().Length > 0 && !char.IsDigit(ctr.Text,
+           ctr.Text.Length - 1))
+                this.errorProvider1.SetError(txtNum2, "This is not invalid               number");
+ else
+
+                this.errorProvider1.Clear();
         }
     }
 }

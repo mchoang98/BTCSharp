@@ -78,5 +78,10 @@ namespace THChuong4
                 txtText.SelectionFont = new Font(txtText.Font.FontFamily, txtText.Font.Size, FontStyle.Regular);
             }
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

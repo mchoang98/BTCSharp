@@ -28,18 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtNhap = new System.Windows.Forms.TextBox();
-            this.btnCapnhat = new System.Windows.Forms.Button();
             this.comboDaNhap = new System.Windows.Forms.ComboBox();
+            this.btnCapnhat = new System.Windows.Forms.Button();
+            this.txtNhap = new System.Windows.Forms.TextBox();
             this.btnTongUoc = new System.Windows.Forms.Button();
             this.btnDemChan = new System.Windows.Forms.Button();
             this.btnDemNgto = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.listUoc = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -54,12 +57,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nhập Số";
             // 
-            // txtNhap
+            // comboDaNhap
             // 
-            this.txtNhap.Location = new System.Drawing.Point(18, 30);
-            this.txtNhap.Name = "txtNhap";
-            this.txtNhap.Size = new System.Drawing.Size(106, 20);
-            this.txtNhap.TabIndex = 0;
+            this.comboDaNhap.FormattingEnabled = true;
+            this.comboDaNhap.Location = new System.Drawing.Point(18, 69);
+            this.comboDaNhap.Name = "comboDaNhap";
+            this.comboDaNhap.Size = new System.Drawing.Size(194, 21);
+            this.comboDaNhap.TabIndex = 2;
+            this.comboDaNhap.SelectedIndexChanged += new System.EventHandler(this.comboDaNhap_SelectedIndexChanged);
             // 
             // btnCapnhat
             // 
@@ -71,14 +76,14 @@
             this.btnCapnhat.UseVisualStyleBackColor = true;
             this.btnCapnhat.Click += new System.EventHandler(this.btnCapnhat_Click);
             // 
-            // comboDaNhap
+            // txtNhap
             // 
-            this.comboDaNhap.FormattingEnabled = true;
-            this.comboDaNhap.Location = new System.Drawing.Point(18, 69);
-            this.comboDaNhap.Name = "comboDaNhap";
-            this.comboDaNhap.Size = new System.Drawing.Size(194, 21);
-            this.comboDaNhap.TabIndex = 2;
-            this.comboDaNhap.SelectedIndexChanged += new System.EventHandler(this.comboDaNhap_SelectedIndexChanged);
+            this.txtNhap.Location = new System.Drawing.Point(18, 30);
+            this.txtNhap.Name = "txtNhap";
+            this.txtNhap.Size = new System.Drawing.Size(106, 20);
+            this.txtNhap.TabIndex = 0;
+            this.txtNhap.TextChanged += new System.EventHandler(this.txtNhap_TextChanged);
+            this.txtNhap.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtNhap_KeyDown);
             // 
             // btnTongUoc
             // 
@@ -118,6 +123,7 @@
             this.btnThoat.TabIndex = 7;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // listUoc
             // 
@@ -138,6 +144,10 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách các ước số";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -154,6 +164,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -170,5 +181,6 @@
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.ListBox listUoc;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
